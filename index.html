@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+
+<!-- for css -->
+ <style>
+     *{
+        margin: 0;
+        padding: 0;
+     }
+     body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: azure;
+     }
+     .header_part{
+        padding: 20px;
+        text-align: center;
+        background-color: lightseagreen;
+        color: white;
+        text-transform: uppercase;
+     }
+     a{
+        text-decoration: none;
+        color: white;
+     }
+     h1{
+        padding-bottom: 30px;
+        text-transform: uppercase;
+        font-size: 3rem;
+     }
+     .banner_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+
+     }
+     .button_group{
+        text-align: center;
+        
+     }
+     button{
+        width: 200px;
+        padding: 16px;
+        border: none;
+        border-radius: 50px;
+        background-color: lightseagreen;
+        color: white;
+        cursor: pointer;
+        box-shadow: 5px;
+        font-weight: bold;
+     }
+     button:hover{
+        background-color: gray;
+     }
+
+ </style>
+</head>
+<body>
+    <div class="header_part">
+        <a href="index.html"> <h2>Hospital Management System</h2></a>
+    </div>
+
+    <div class="banner_container">
+        <div>
+            <h1>Evergreen Life Hospital</h1>
+        <div class="button_group">
+            <button onclick="window.location.href='appointment.php'">Make Appointment</button>
+            <button onclick="window.location.href='showAppointment.php'">Show Appointment</button>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
